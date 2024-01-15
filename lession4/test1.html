@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+<p>BUTTON</p>
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+<button type="button" onclick="document.write('ket qua la: ', 8 + 9)">tinh tong</button>
+<!-- alert-->
+<!--<script>
+    window.alert(5 + 6); //hiện ra một thư mục lên
+</script> -->
+<script>
+    console.log(5 + 6); //chỉ hiện trên console. phải bật F12 lên mới thấy
+</script>
+
+
+<button onclick="window.print()">Print this page</button> <!-- thực hiện button in-->
+
+<!-- let để khởi tạo biến-->
+<script>
+    let a , b, c;
+</script>
+
+<!-- mot cai nhap vao tinh tong-->
+<input type="number" id="sothu1">
+<input type="number" id="sothu2">
+
+<button onclick="tinh_tong()">
+    tinh tong
+</button>
+
+<output id="tong">
+
+</output>
+
+<script>
+    function tinh_tong(){
+        let num1 = document.getElementById("sothu1").value;
+        let num2 = document.getElementById("sothu2").value;
+        let tong = Number(num1) + Number(num2);
+        document.getElementById("tong").innerHTML = "tong hai so: " + tong;
+    }
+
+
+</script>
+</body>
+</html>

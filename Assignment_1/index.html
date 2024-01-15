@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>css-tricks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- 1. Modal -->
+    <header class="header_menu">
+        <div class="menu">
+            <nav class="d-flex align-items-center ">
+                <img id="logo_title" width="322px" src="./image/logo.png" alt="">
+                <ul id="title" class="d-flex list-unstyled gap-3 m-0 flex-grow-1 ">
+                    <li><a href="">ARTICLE</a></li>
+                    <li><a href="">VIDEOS</a></li>
+                    <li><a href="">ALMANAC</a></li>
+                    <li><a href="">NEWSLETTER</a></li>
+                    <li><a href="">GUIDES</a></li>
+                    <li><a href="">DIGIATALOCEAN</a></li>
+                    <li><a href="">DO COMMUNITY</a></li>
+                </ul>
+                <button id="search-btn" class="bg-white border-0 ">
+                    <img width="32px" src="./icon/icon_search.png" alt="">
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- search-->
+    <div id="search-modal" class="modal modal-lg">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button id="btn-close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="search-box d-flex m-0 flex-grow-1">
+                        <input id="search-input" style="width: 90%;" type="text" placeholder="Search">
+                        <img style="margin-left: 20px;" width="30px" src="./icon/icon_search.png" alt="">
+                    </div>
+                </div>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 2. Dữ liệu -->
+    
+    <!-- 3. Search Input -->
+
+
+
+    <!-- Begin Container -->
+    <div class="page-wrap">
+        <main class="maincontent">
+            <div class="site-note">
+                <a href="#">
+                    <img src="./image/site-note.png" alt="" class="site-note-img">
+                </a>
+                <div class="site-note-text">
+                    <p class="site-note-desc">
+                        UGURUS, powered by DigitalOcean, offers elite training and mentorship for Agency Owners. Join the Agency Accelerator <i><a href="">for free</a></i> to get more leads, land high-value deals, and build recurring revenue!
+                    </p>
+                </div>
+            </div>
+            <article class="article">
+                <div class="article-thumbnail">
+                    <a href="">
+                        <img src="./image/article.png" alt="">
+                    </a>
+                </div>
+                <div class="article-text">
+                    <header class="article-text-header">
+                        <ul class="article-text-list">
+                            <li class="article-text-item"><a href="#">Passkeys</a></li>
+                            <li class="article-text-item"><a href="#">Security</a></li>
+                            <li class="article-text-item"><a href="#">Webauthn</a></li>
+                        </ul>
+                    </header>
+                    <h1 class="article-text-title">Passkeys: What the Heck and Why?</h1>
+                    <p class="article-text-desc">These things called passkeys sure are making the rounds these days. They were a main attraction at W3C TPAC 2022, gained support in Safari 16, are finding their way into macOS and iOS, and are slated to be the future for password managers like 1Password. They are already supported in Android, and will soon find their way into Chrome OS and Windows in […]</p>
+                    <div class="article-text-footer">
+                        <a href="#" class="author-link">
+                            <img src="./image/avt.jpg" alt="" class="author-img">
+                            <p class="author-name">Nguyễn Công Cường</p>
+                        </a>
+                        <p class="date-post">on Apr 12, 2023</p>
+                    </div>
+                </div>
+            </article>
+            
+        </main>
+    </div>
+    <!-- end Container -->
+    <footer>
+        <div class="frame_items">
+            <div class="frame">
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/image 4.png" class="card-img-top" alt="...">
+    
+                    <div class="tag_image1">
+                        <p>CROSS-BROWSER</p>
+                        <p>DEVTOOLS</p>
+                    </div>
+                    <h3>
+                        Some Cross-Browser Devtools Featueres You Might Not Know 
+                    </h3>
+                    <div class="card-body">
+                      <p class="card-text">I spend a lot of time in DevTools, and I’m sure you do too. Sometimes I even bounce between them, especially 
+                        when I’m debugging cross-browser issues. DevTools is a lot like browsers themselves 
+                        — not all of the features in …</p>
+                    </div>
+                    <div class="fotter_card">
+                        <h6>
+                            Pankaj Parashar
+                        </h6>
+                        <p>Mar 22, 2023</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="frame">
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/image 2.png" class="card-img-top" alt="...">
+                    <div class="tag_image1">
+                        <p>CUSTOME ELEMENTS</p>
+                        <p>I18N</p>
+                        <P>LOCALES</P>
+                    </div>
+                    <h3>
+                        Making Calendars With Accessibility and Internationalizat ion in Mind
+                    </h3>
+                    <div class="card-body">
+                      <p class="card-text">You know what it’s like to pick up a new language or framework.
+                         Sometimes there’s great documentation to help you find your way through it. But even the best 
+                        documentation doesn’t cover absolutely everything. And when you work with something …</p>
+                    </div>
+                    <div class="fotter_card">
+                        <h6>
+                            Mads Stoumann
+                        </h6>
+                        <p>Mar 13, 2023</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="frame">
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/image 3 (1).png" class="card-img-top" alt="...">
+                    <div class="tag_image1">
+                        <p>LEARNING</p>
+                        <p>REACT</p>
+                    </div>
+                    <h3>
+                        5 Mistakes I Made When Starting My First React Project
+                    </h3>
+                    <div class="card-body">
+                      <p class="card-text">You know what it’s like to pick up a new language or 
+                        framework. Sometimes there’s great documentation to help you find your way through it. But even the best 
+                        documentation doesn’t cover absolutely everything. And when you work with something …</p>
+                    </div>
+                    <div class="fotter_card">
+                        <h6>
+                            Richard Oliver Bray
+                        </h6>
+                        <p>Mar 10, 2023</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="frame_items">
+            <div class="frame">
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/image 5.png" class="card-img-top" alt="...">
+                    <div class="tag_image1">
+                        <p>COS()</p>
+                        <p>MATH</p>
+                        <p>SIN()</p>
+                    </div>
+                    <h3>
+                        Creating a Clock with the New CSS sin() and cos() Trigonometry Functions
+                    </h3>
+                    <div class="card-body">
+                      <p class="card-text">CSS trigonometry functions are here! Well, 
+                        they are if you’re using the latest versions of Firefox and Safari, that is. Having this sort of mathematical
+                         power in CSS opens up a whole bunch of possibilities. In this tutorial, I thought …</p>
+                    </div>
+                    <div class="fotter_card">
+                        <h6>
+                            Richard Oliver Bray
+                        </h6>
+                        <p>on Mar 10, 2023</p>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="frame">
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/image 6.png" class="card-img-top" alt="...">
+                    <div class="tag_image1">
+                        <p>FRONTS</p>
+                        <p>GOOGLE FRONT</p>
+                        <p>WORDFRESS</p>
+                    </div>
+                    <h3>
+                        Managing Fonts in WordPress Block Themes
+                    </h3>
+                    <div class="card-body">
+                      <p class="card-text">Fonts are a defining characteristic of the design of any site. 
+                        That includes WordPress themes, where it’s common for theme developers 
+                        to integrate a service like into the WordPress Customizer settings for a “classic” PHP-based theme. That hasn’t …</p>
+                    </div>
+                    <div class="fotter_card">
+                        <h6>
+                            Ganesh Dahal
+                        </h6>
+                        <p>on Mar 6, 2023</p>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="frame">
+                <div class="card" style="width: 18rem;">
+                    <img src="./image/image 7.png" class="card-img-top" alt="...">
+                    <div class="tag_image1">
+                        <p>LIST-STYLE</p>
+                        <p>LISTS</p>
+                        <p>MARKER</p>
+                    </div>
+                    <h3>
+                        Everything You Need to Know About the Gap After the List Marker
+                    </h3>
+                    <div class="card-body">
+                      <p class="card-text">on Google’s web.dev blog and noticed something odd in one of the code examples in the</p>
+                    </div>
+                    <div class="fotter_card">
+                        <h6>
+                            Šime Vidas
+                        </h6>
+                        <p>on Mar 2, 2023</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!--end-->
+    <div class="footer_inside">
+        <div class="massege_and_form">
+            <p class="massege">CSS-Tricks is powered by <a href="">DigitalOcean</a>.</p>
+                <div class="fotter_form">
+                    <h4>Keep up to date on web dev</h4>
+                    <p>with our hand-crafted newsletter</p>
+                    <form class="Form" >
+                        <input type="text" id="Input" name="name" required placeholder="Email Address:">
+                        <input type="submit" id="Nut" value="Subscribe">
+                    </form>
+                </div>
+        </div>
+        <div class="link_gird">
+            <div>
+                <h5>DigitalOcean</h5>
+                <ul>
+                    <p>DigitalOcean</p>
+                    <p>DigitalOcean Community</p>
+                    <p>About DigitalOcean</p>
+                    <p>Legal</p>
+                    <p>Free Credit Offer</p>
+                </ul>
+            </div>
+            <div>
+                <h5>CSS-Tricks</h5>
+                <ul>
+                    <p>Email</p>
+                    <p>Guest Writing</p>
+                    <p>Book</p>
+                    <p>Advertising</p>
+                </ul>
+            </div>
+            <div>
+                <h5>Follow</h5>
+                <ul style="columns: 2;">
+                    <p>Mastodon</p>
+                    <p>Twitter</p>
+                    <p>Instagram</p>
+                    <p>YouTube</p>
+                    <p>CodePen</p>
+                    <p>iTunes</p>
+                    <p>RSS</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="search-bar.js"></script>
+</body>
+
+
+</html>
