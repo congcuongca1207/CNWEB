@@ -1,0 +1,83 @@
+/*content*/
+.page-wrap .article-and-slidebar .mega-header .tags{
+    color: #FFDFC7;
+    display: flex;
+
+}
+.page-wrap .article-and-slidebar .mega-header .tags p{
+    padding: 15px;
+    color: #FFDFC7;
+}
+.page-wrap .article-and-slidebar .mega-header .article-title
+{
+    padding: 15px;
+    color: white;
+}
+.page-wrap .article-and-slidebar .mega-header p{
+    padding: 15px;
+    color: white;
+}
+.page-wrap .article-and-slidebar img{
+    width: 100%;
+    height: 500px;
+    padding: 15px;
+}
+
+/* article content*/
+.page-wrap .article-and-slidebar .article-content{
+    font-size: 1.2rem;
+    background: #fff;
+    color: #000;
+    overflow-wrap: break-word;
+    border-radius: 8px;
+    padding: 4rem;
+    position: relative;
+    margin-top: 50px;
+}
+.page-wrap .article-and-slidebar .article-content p{
+    padding: 15px;
+    font-weight: 500;
+}
+.page-wrap .article-and-slidebar .article-content h3{
+    padding: 15px;
+}
+.page-wrap .article-and-slidebar .article-content .h_link img{
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 20px 0 20px 0;
+}
+.page-wrap .article-and-slidebar .article-content .h_link{
+    display: flex;
+}
+
+/*relate-post*/
+.page-wrap .relate-post .jp-relateposts{
+    display: flex;
+    margin-bottom: 10px;
+}
+.page-wrap .relate-post .jp-relateposts .relatepost-items{
+    font-size: .75rem;
+    background: #434343;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 0 1rem 0 0!important;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.page-wrap .relate-post{
+    padding-top: 250px;
+}
+
+/*footer-inside article*/
+.footer_inside{
+    margin-top: 350px;
+}
+body{
+    background-color: #474747;
+}

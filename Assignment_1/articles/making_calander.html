@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Making Calendars With Accessibility and Internationalization in Mind</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>css-tricks</title>
+    <link rel="stylesheet" href="/Assignment_1/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style_making.css">
 </head>
 <body>
+    <!-- 1. Modal -->
     <header class="header_menu">
         <div class="menu">
             <nav class="d-flex align-items-center ">
-                <img id="logo_title" width="322px" src="./image/logo.png" alt="">
+                <img id="logo_title" width="322px" src="/Assignment_1/image/logo.png" alt="">
                 <ul id="title" class="d-flex list-unstyled gap-3 m-0 flex-grow-1 ">
                     <li><a href="">ARTICLE</a></li>
                     <li><a href="">VIDEOS</a></li>
@@ -20,7 +26,7 @@
                     <li><a href="">DO COMMUNITY</a></li>
                 </ul>
                 <button id="search-btn" class="bg-white border-0 ">
-                    <img width="32px" src="./icon/icon_search.png" alt="">
+                    <img width="32px" src="/Assignment_1/icon/icon_search.png" alt="">
                 </button>
             </nav>
         </div>
@@ -37,19 +43,126 @@
                 <div class="modal-body">
                     <div class="search-box d-flex m-0 flex-grow-1">
                         <input id="search-input" style="width: 90%;" type="text" placeholder="Search">
-                        <img style="margin-left: 20px;" width="30px" src="./icon/icon_search.png" alt="">
+                        <img style="margin-left: 20px;" width="30px" src="/Assignment_1/icon/icon_search.png" alt="">
                     </div>
                 </div>
                 <div id="modal-body"></div>
             </div>
         </div>
     </div>
-    <!-- 2. Dữ liệu -->
+    <!--Content-->
+    <div class="page-wrap">
+        <div style="margin-top: 60px;" class="article-and-slidebar">
+            <header class="mega-header">
+                <div class="tags">
+                    <p>custom elements</p>
+                    <p>i18n</p>
+                    <p>locales</p>
+                </div>
+                <h1 class="article-title">
+                    Making Calendars With Accessibility and Internationalization in Mind
+                </h1>
+                <p>
+                    Mads Stoumann on Mar 13,2023
+                </p>
+            </header>
+            <img src="/Assignment_1/image/image 2.png" alt="">
+            <div class="article-content">
+                <p>I don’t want to re-create the wheel here, but I will show you how we can<br> get
+                     a dang good calendar with vanilla JavaScript. We’ll look into</p>
+                <p>internationalization and formatting , using the Intl.Locale <br> Int.DateTimeFormat and Intl.NumberFormat-APIs.</p>
+                <p>In other words, we’re making a calendar… only without the extra dependencies you might typically see used in a tutorial like this, and with some of the nuances you might not typically see. And, in the process, I hope you’ll gain a new appreciation for newer things that 
+                    JavaScript can do while getting an idea of the sorts of things that cross my mind when I’m putting something like this together.</p>
+                <h3>First off, naming</h3>
+                <p>This method will render a single month. Later we'll call this method from<br>[...Array(12).key()] to render an entire year</p>
+                <div class="h_link">
+                    <img  src="./image_articles/Frame.png" alt="">
+                    <h3>Initial data and internationalization</h3>
+                </div>
+                <p>One of the common things a typical online calendar does is highlight the current date. So let’s create a reference for that:</p>
+                <p>One of the common things a typical online calendar does is highlight the<br>current date. So let's create a reference for that:</p>
+                <p>Next, we’ll create a “configuration object” that we’ll merge with the optional<br>settings object of the primary method:</p>
+                <p>We check, if the root element () contains a lang-attribute with locale<br>
+                info; otherwise, we'll fallback to using en-US. This is the first step toward</p>
+                <p style="color: #0089C7;">internationalizing the calendar</p>
+            </div>
+        </div>
+        <div class="relate-post">
+            <div class="jp-relateposts">
+                <div class="relatepost-items">
+                    <p>December 1, 2017</p>
+                    <h4>24 Ways</h4>
+                    <p>24 Ways, the advent calendar for web geeks, started up again this week. Throughout December they’ll 
+                        be publishing a wide range of posts all about web design, CSS, and front-end development. 
+                        Chen Hui Jing has already written a great post about feature queries and Stephanie Drescher published a post today…</p>
+                </div>
+                <div class="relatepost-items">
+                    <p>June 15, 2022</p>
+                    <h4>Conditionally Styling Selected Elements in a Grid Container</h4>
+                    <p>Calendars, shopping carts, galleries, file explorers, and online libraries are some situations where selectable
+                         items are shown in grids (i.e. square lattices). You know, even those security checks that ask you 
+                        to select all images with crosswalks or whatever. 🧐 I found a neat way to display selectable options in…</p>
+                </div>
+                <div class="relatepost-items">
+                    <p>June 29, 2020</p>
+                    <h4>Styling Layout Wrappers In CSS</h4>
+                    <p>Two things that strike me often about the web are how many ways there are to go about 
+                        the same thing and how many considerations go into even the most seemingly simple things. Working with wrapper elements
+                         is definitely on both those lists. Wrappers (or containers or whatever) are so…</p>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <!-- 3. Search Input -->
+    <div class="footer_inside">
+        <div class="massege_and_form">
+            <p class="massege">CSS-Tricks is powered by <a href="">DigitalOcean</a>.</p>
+                <div class="fotter_form">
+                    <h4>Keep up to date on web dev</h4>
+                    <p>with our hand-crafted newsletter</p>
+                    <form class="Form" >
+                        <input type="text" id="Input" name="name" required placeholder="Email Address:">
+                        <input type="submit" id="Nut" value="Subscribe">
+                    </form>
+                </div>
+        </div>
+        <div class="link_gird">
+            <div>
+                <h5>DigitalOcean</h5>
+                <ul>
+                    <p>DigitalOcean</p>
+                    <p>DigitalOcean Community</p>
+                    <p>About DigitalOcean</p>
+                    <p>Legal</p>
+                    <p>Free Credit Offer</p>
+                </ul>
+            </div>
+            <div>
+                <h5>CSS-Tricks</h5>
+                <ul>
+                    <p>Email</p>
+                    <p>Guest Writing</p>
+                    <p>Book</p>
+                    <p>Advertising</p>
+                </ul>
+            </div>
+            <div>
+                <h5>Follow</h5>
+                <ul style="columns: 2;">
+                    <p>Mastodon</p>
+                    <p>Twitter</p>
+                    <p>Instagram</p>
+                    <p>YouTube</p>
+                    <p>CodePen</p>
+                    <p>iTunes</p>
+                    <p>RSS</p>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-
-
-    <!-- Begin Container -->
+    <script src="/Assignment_1/script.js"></script>
+    <script src="/Assignment_1/search-bar.js"></script>
 </body>
+
 </html>
