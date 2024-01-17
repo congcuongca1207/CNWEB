@@ -1,0 +1,45 @@
+@media screen and (max-width: 576px){
+    .massege_and_form {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_inside .massege_and_form .fotter_form .Form #Input{
+        width: 70%;
+    }
+    .footer_inside .link_gird{
+        display: block;
+    }
+    .page-wrap .relate-post .jp-relateposts{
+        display: block;
+    }
+    .page-wrap .relate-post .jp-relateposts .relatepost-items {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .d-flex{
+        display: flex!important;
+        flex-wrap: wrap
+    }
+    .massege_and_form {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_inside .massege_and_form .fotter_form .Form #Input{
+        width: 70%;
+    }
+    .footer_inside .link_gird{
+        display: block;
+    }
+    .page-wrap .relate-post .jp-relateposts{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .d-flex{
+        display: flex!important;
+        flex-wrap: wrap
+    }
+}
